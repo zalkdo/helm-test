@@ -23,3 +23,8 @@ $ helm install cluser-autoscaler stable/cluster-autoscaler \
 ```
 
 ## 업데이트
+```
+$ helm upgrade cluster-autoscaler stable/cluster-autoscaler \
+  --namespace kube-system \
+  --values values.yml
+```
