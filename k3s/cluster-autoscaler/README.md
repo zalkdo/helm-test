@@ -4,7 +4,7 @@ https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler
 
 kubernetes Version과 CA Version을 맞춰야 함.
 
-##설치
+## 설치
 
 eks terraform apply 후 'aws_account_id'를 values.yml에 입력
 
