@@ -31,13 +31,13 @@ annotations: {}
 labels: {}
 
 ## Additional container arguments
-##
-# º¯°æ.
-# extraArgs:
-   - --enable-skip-login
-   - --enable-insecure-login
-   - --system-banner="Welcome to Kubernetes"
-#   - --authentication-mode=token
+## add arguments list
+
+extraArgs:
+  - --enable-skip-login
+  - --enable-insecure-login
+  - --system-banner="Welcome to Kubernetes"
+  - --authentication-mode=basic
 
 ## Additional container environment variables
 ##
@@ -98,7 +98,7 @@ resources:
 ## Note: If set to true, you may want to add --enable-insecure-login to extraArgs
 protocolHttp: false
 
-# NodePortº¯°æ
+# NodePortë³€ê²½
 service:
   type: NodePort
   externalPort: 443
