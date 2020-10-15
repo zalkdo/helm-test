@@ -19,6 +19,10 @@ Specify each parameter using th --set key=value
 $ helm install kubernetes-dashboard/kubernetes-dashboard --name my-release \
   --set=image.tag=v2.0.3,service.type=NodePort
 ```
+YAML file that specifies the values for the above parameters can be providerd while installing th chart
+```
+$ helm install kubernetes-dashboard/kubernetes-dashboard --name my-release -f values.yaml
+```
 
 ## 업데이트
 https://artifacthub.io/packages/helm/k8s-dashboard/kubernetes-dashboard/2.0.3
