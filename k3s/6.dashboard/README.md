@@ -1,8 +1,7 @@
 # kubernetes-dashboard
 
 https://artifacthub.io/packages/helm/k8s-dashboard/kubernetes-dashboard/2.0.3
-
-kubernetes Version과 CA Version을 맞춰야 함.
+kubernetes Version과 Dashboard Version을 맞춰야 함.
 
 ## 설치
 
@@ -12,8 +11,8 @@ $ helm repo add k8s-dashboard https://kubernetes.github.io/dashboard/
 # Deploy a Helm Release named "my-release" using the kubernetes-dashboard chart
 $ helm install my-release k8s-dashboard/kubernetes-dashboard
 ```
-Specify each parameter using th --set key=value.
-extraArgs설정이 잘안됨 values.xml사용을 권장함
+Specify each parameter using th --set key=value. 
+extraArgs설정이 잘안됨 values.xml사용을 권장함. 
 ```
 $ helm install my-release k8s-dashboard/kubernetes-dashboard \
   --set=image.tag=v2.0.3,service.type=NodePort
