@@ -19,7 +19,7 @@ extraArgs설정이 잘안됨 values.xml사용을 권장함
 $ helm install my-release k8s-dashboard/kubernetes-dashboard \
   --set=image.tag=v2.0.3,service.type=NodePort
 ```
-YAML file that specifies the values for the above parameters can be providerd while installing th chart.
+YAML file that specifies the values for the above parameters can be providerd while installing th chart.\n
 values.yml : https://github.com/kubernetes/dashboard/tree/master/aio/deploy/helm-chart/kubernetes-dashboard
 ```
 #template로 확인 후 intall실행
