@@ -17,19 +17,18 @@ spec:
       containers:
       - name: postgres
         image: postgres:10.4
-        imagePullPolicy: "IFNotPresent"
         ports:
             - containerPort: 5432
         envFrom:
-          - cnofigMapRef:
+          - configMapRef:
               name: postgres-config
         volumeMounts:
           - mountPath: "/var/lib/postgresql/data"
             name: "postgredb"
-    volumes:
-      - name: postgredb
-        persistentVolumeClaim:
-          claimName: postgres-pv-claim
+      volumes:
+        - name: postgredb
+          persistentVolumeClaim:
+            claimName: postgres-pv-claim
 ---
 apiVersion: v1
 kind: Service

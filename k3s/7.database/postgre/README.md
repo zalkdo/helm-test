@@ -3,6 +3,7 @@ helm chart : https://github.com/bitnami/charts/tree/master/bitnami/postgresql
 helm 설치와 Deplyment설치에 대한 가이드
 
 ## Deployment - Install
+https://severalnines.com/database-blog/using-kubernetes-deploy-postgresql
 ### ConfigMap Create
 ```
 $ kubectl create -f postgre-configmap.yaml
